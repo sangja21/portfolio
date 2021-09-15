@@ -1,0 +1,483 @@
+/* Offline_Bookclub*/
+
+@charset "utf-8";
+
+/* main */
+
+main {
+    width: 100%;
+    height: 500px;
+    background-image: -moz-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    color: #fff;
+}
+
+main .inner-main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .inner-main .title {
+    position: absolute;
+    left: 75px;
+    top: 150px;
+}
+
+main .inner-main .title h2 {
+    font-size: 48px;
+    font-family: "jua";
+    font-weight: 300;
+}
+
+main .inner-main .title p {
+    font-size: 30px;
+}
+
+main .inner-main img {
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+/* section.top */
+
+section.top {
+    width: 100%;
+    background-color: #e7f5ff;
+}
+
+section.top > div {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* .top > question */
+section.top div.question {
+    position: relative;
+    height: 600px;
+
+}
+
+section.top div.question > img {
+    position: absolute;
+    top: 50px;
+    left: 110px;
+}
+
+section.top div.question .title_box {
+    position: absolute;
+    top: 230px;
+    right: 40px;
+
+}
+
+section.top div.question .title_box h2 {
+    font-family: "jua";
+    font-size: 36px;
+    font-weight: 300;
+    color: #4186ec;
+    position: relative;
+}
+
+section.top div.question .title_box h2:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/offline_book_club_quote-left.png") no-repeat center;
+    transform: translate(-100%);
+}
+
+section.top div.question .title_box h2:after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/offline_book_club_quote-right.png") no-repeat center;
+    transform: translate(100%);
+    position: absolute;
+    right: 0;
+}
+
+
+/* .top > curriculum_chart */
+
+section.top div.curriculum_chart h2 {
+    margin: 180px 0 60px;
+    text-align: center;
+    font-family: "jua";
+    font-weight: 300;
+    color: #4186ec;
+    font-size: 48px;
+}
+
+/* .top > question */
+
+section.top div.bookclub h2 {
+    margin: 210px 0 60px;
+    text-align: center;
+    font-family: "jua";
+    font-weight: 300;
+    color: #4186ec;
+    font-size: 48px;
+}
+
+section.top div.bookclub .icon_bookclub {
+    display: inline-block;
+    width: 330px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+section.top div.bookclub .icon_bookclub:nth-child(3) {
+    margin: 0 100px;
+}
+
+
+section.top div.bookclub .icon_bookclub img {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+section.top div.bookclub .icon_bookclub p {
+    display: block;
+    position: absolute;
+    font-family: "jua";
+    font-size: 23px;
+    font-weight: bold;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* .top > question */
+section.top div.daily {
+    height: 700px;
+    position: relative;
+}
+
+section.top div.daily .daily_title {
+    position: absolute;
+    top: 250px;
+}
+
+section.top div.daily .daily_title h2 {
+    color: #4186ec;
+    font-family: "jua";
+    font-weight: 300;
+    font-size: 36px;
+}
+
+section.top div.daily .daily_title p {
+    margin: 30px 0 80px;
+    font-size: 18px;
+}
+
+section.top div.daily .daily_title a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #4186ec;
+    border-radius: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+section.top div.daily .daily_title a:hover {
+    background-color: #fff;
+    color: #4186ec;
+}
+
+section.top div.daily img {
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+/* section.bottom */
+/*section.bottom {}*/
+
+/* section.bottom > div.advantge */
+section.bottom div.advantage {
+    width: 1200px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.bottom div.advantage .img-box {
+    position: absolute;
+    top: 200px;
+
+
+}
+
+section.bottom div.advantage .title-wrap {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+}
+
+section.bottom div.advantage .title-wrap h2 {
+    font-size: 26px;
+    font-family: "jua";
+    font-weight: 300;
+    color: #4186ec;
+}
+
+section.bottom div.advantage .title-wrap .txt_box {
+    width: 600px;
+    height: 290px;
+    margin: 60px 0 0;
+    border-radius: 10px;
+    background-color: rgb(231, 245, 255);
+    box-shadow: 2.5px 4.33px 4.75px 0.25px rgba(51, 51, 51, 0.5);
+    position: relative;
+}
+
+section.bottom div.advantage .title-wrap .txt_box:after {
+    display: block;
+    content: "";
+    border-radius: 10px;
+    background-image: -moz-linear-gradient(90deg, rgb(1, 94, 234) 0%, rgb(0, 192, 250) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(1, 94, 234) 0%, rgb(0, 192, 250) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(1, 94, 234) 0%, rgb(0, 192, 250) 100%);
+    width: 78px;
+    height: 78px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    transform: translateX(50%);
+}
+
+section.bottom div.advantage .title-wrap .txt_box p {
+    margin: 10px 10px 30px;
+    padding-top: 10px;
+    display: block;
+}
+
+section.bottom div.advantage .title-wrap .txt_box p:before {
+    display: block;
+    content: "";
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    /*    outline: 1px solid red;*/
+    background: url(../images/offline_book_club_check-mark.png) no-repeat center;
+}
+
+
+/* section.bottom > div.recommend */
+section.bottom div.recommend {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.bottom div.recommend .recommend_left {
+    width: 610px;
+    height: 580px;
+    border-radius: 40px;
+    background-color: rgb(231, 245, 255);
+    position: relative;
+}
+
+section.bottom div.recommend .recommend_left h2 {
+
+    margin: 0 60px 20px;
+    padding-top: 60px;
+    font-size: 45px;
+    font-family: "jua";
+    font-weight: 300;
+    color: #4186ec;
+}
+
+section.bottom div.recommend .recommend_left h2:before {
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../images/offline_book_club_icon_good.png) no-repeat bottom;
+    margin-right: 10px;
+}
+
+section.bottom div.recommend .recommend_left p {
+    font-size: 20px;
+    margin: 30px 20px;
+}
+
+section.bottom div.recommend .recommend_left p:before {
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../images/offline_book_club_check-blue.png) no-repeat bottom;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+
+section.bottom div.recommend > img {
+    display: block;
+    width: 600px;
+    position: absolute;
+    right: -30px;
+    top: 100px;
+
+}
+
+/* particle */
+section.bottom div.recommend .recommend_left .particle {
+    background-image: -moz-linear-gradient(90deg, rgb(1, 94, 234) 0%, rgb(0, 192, 250) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(1, 94, 234) 0%, rgb(0, 192, 250) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(1, 94, 234) 0%, rgb(0, 192, 250) 100%);
+    position: absolute;
+}
+
+.recommend_left .particle.a {
+    width: 90px;
+    height: 60px;
+    top: -20px;
+    left: -20px;
+    border-radius: 10px;
+}
+
+.recommend_left .particle.b {
+    width: 130px;
+    height: 90px;
+    bottom: 30px;
+    left: -30px;
+    border-radius: 20px;
+}
+
+.recommend_left .particle.c {
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    right: -30px;
+    z-index: -9;
+    border-radius: 10px;
+}
+
+.recommend_left .particle.d {
+    width: 200px;
+    height: 150px;
+    border-radius: 30px;
+    bottom: -30px;
+    right: -75px;
+}
+
+
+/* section.bottom > div.decommendation */
+section.bottom div.decommendation {
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.bottom div.decommendation .decommendation_right {
+    width: 610px;
+    height: 580px;
+    border-radius: 40px;
+    background-color: rgb(231, 245, 255);
+    position: absolute;
+    right: 0;
+}
+
+section.bottom div.decommendation .decommendation_right h2 {
+
+    margin: 0 60px 20px;
+    padding-top: 60px;
+    font-size: 45px;
+    font-family: "jua";
+    font-weight: 300;
+    color: #ff7c3c;
+}
+
+section.bottom div.decommendation .decommendation_right h2:before {
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url(../images/offline_book_club_icon_bad.png) no-repeat bottom;
+    margin-right: 10px;
+}
+
+section.bottom div.decommendation .decommendation_right p {
+    font-size: 20px;
+    margin: 30px 20px;
+}
+
+section.bottom div.decommendation .decommendation_right p:before {
+    display: inline-block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(../images/offline_book_club_check-red.png) no-repeat bottom;
+    background-size: contain;
+    margin-right: 5px;
+}
+
+
+section.bottom div.decommendation > img {
+    display: block;
+    width: 600px;
+    position: absolute;
+    left: -30px;
+
+}
+
+/* particle */
+.decommendation_right .particle {
+    background-image: -moz-linear-gradient(90deg, rgba(255, 147, 76, 0.99608) 0%, rgb(252, 104, 111) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgba(255, 147, 76, 0.99608) 0%, rgb(252, 104, 111) 100%);
+    background-image: -ms-linear-gradient(90deg, rgba(255, 147, 76, 0.99608) 0%, rgb(252, 104, 111) 100%);
+    position: absolute;
+}
+
+.decommendation_right .particle.a {
+    width: 130px;
+    height: 90px;
+    top: -30px;
+    left: 100px;
+    border-radius: 10px;
+    z-index: -9;
+}
+
+.decommendation_right .particle.b {
+    width: 130px;
+    height: 90px;
+    top: -30px;
+    right: 80px;
+    border-radius: 20px;
+
+}
+
+.decommendation_right .particle.c {
+    width: 80px;
+    height: 60px;
+    border-radius: 20px;
+    bottom: -10px;
+    left: -20px;
+}
+
+.decommendation_right .particle.d {
+    width: 160px;
+    height: 90px;
+    border-radius: 30px;
+    bottom: -40px;
+    right: 80px;
+}

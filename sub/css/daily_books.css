@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/* main */
+
+main {
+    width: 100%;
+    height: 500px;
+    background-image: -moz-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    color: #fff;
+}
+
+main .inner-main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .inner-main .title {
+    position: absolute;
+    left: 75px;
+    top: 150px;
+}
+
+main .inner-main .title h2 {
+    font-size: 48px;
+    font-family: "jua";
+    font-weight: 300;
+}
+
+main .inner-main .title p {
+    font-size: 30px;
+}
+
+main .inner-main img {
+    display: block;
+    width: 500px;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+/* section */
+
+section {
+    width: 1200px;
+    margin: 0 auto 100px;
+}
+
+
+/* .republic_days_wrap */
+
+.republic_days_wrap {
+    margin-top: 50px;
+}
+
+.republic_days_wrap a {
+    display: block;
+    width: 31%;
+    border-radius: 20px;
+    margin: 1%;
+    float: left;
+    /*    background-color: aquamarine;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.republic_days_wrap a img {
+    display: block;
+    width: 100%;
+}
+
+.republic_days_wrap a .day_title {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.republic_days_wrap a .day_title .d_title {
+    font-size: 24px;
+    font-family: "jua";
+    font-weight: 300;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+}
+
+.republic_days_wrap a .day_title .day {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.republic_days_wrap a:hover .day_title {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* days bg Color */
+
+a.d1 {
+    background: #2da5bd;
+}
+
+a.d2 {
+    background: #899ea6;
+}
+
+a.d3 {
+    background: #ad82c7;
+}
+
+a.d4 {
+    background: #FAC46E;
+}
+
+a.d5 {
+    background: #e6b4f0;
+}
+
+a.d6 {
+    background: #2da5bd;
+}
+
+a.d7 {
+    background: #a27f92;
+}
+
+a.d8 {
+    background: #3857F2;
+}
+
+a.d9 {
+    background: #ab9dcc;
+}
+
+a.d10 {
+    background: #006683;
+}
+
+a.d11 {
+    background: #72a5a6;
+}
+
+a.d12 {
+    background: #A9D6BC;
+}
+
+a.d13 {
+    background: #C88FF5;
+}
+
+a.d14 {
+    background: #9795c9;
+}
+
+a.d15 {
+    background: #deca97;
+}
+
+a.d16 {
+    background: #b5eaeb;
+}
+
+a.d17 {
+    background: #ffd3a2;
+}
+
+a.d18 {
+    background: #676d67;
+}
+
+a.d19 {
+    background: #AAE092;
+}
+
+a.d20 {
+    background: #FFBC8A;
+}
+
+a.d21 {
+    background: #DEC6AB;
+}
+
+a.d22 {
+    background: #88A3FC;
+}
+
+a.d23 {
+    background: #F2D19B;
+}
+
+a.d24 {
+    background: #061d4f;
+}
+
+a.d25 {
+    background: #FF9582;
+}
+
+a.d26 {
+    background: #FCD4B1;
+}
+
+a.d27 {
+    background: #8DC5D6;
+}
+
+a.d28 {
+    background: #DEDBC8;
+}
+
+a.d29 {
+    background: #87deed;
+}
+
+a.d30 {
+    background: #72AAE0;
+}

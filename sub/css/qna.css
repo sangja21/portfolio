@@ -1,0 +1,241 @@
+/* qna.css */
+
+@charset "utf-8";
+
+/* main */
+
+main {
+    width: 100%;
+    height: 500px;
+    background-image: -moz-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    color: #fff;
+}
+
+main .inner-main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .inner-main .title {
+    position: absolute;
+    left: 75px;
+    top: 150px;
+}
+
+main .inner-main .title h2 {
+    font-size: 48px;
+    font-family: "jua";
+    font-weight: 300;
+}
+
+main .inner-main .title p {
+    font-size: 30px;
+}
+
+main .inner-main img {
+    position: absolute;
+    width: 420px;
+    right: 0;
+    top: 80px;
+}
+
+/* section */
+
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+/* tab_menu */
+
+.tab_menu {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tab_menu li {
+    display: inline-block;
+    margin-right: 150px;
+}
+
+.tab_menu li:last-child {
+    margin-right: 0;
+}
+
+.tab_menu li a {
+    color: #333;
+    display: block;
+    font-size: 22px;
+}
+
+.tab_menu li a:hover {
+    font-weight: bold;
+    transition: all .2s;
+}
+
+.tab_menu li.active a {
+    color: #4186ec;
+    font-weight: bold;
+    border-bottom: 3px solid #4186ec;
+}
+
+/* tab_faq */
+
+.faq {
+    width: 80%;
+    font-size: 18px;
+    margin: 20px auto;
+}
+
+.faq > a {
+    display: block;
+    line-height: 60px;
+    border-bottom: 2px dotted rgba(51, 51, 51, 0.2);
+}
+
+.faq .qmark {
+    color: #4186ec;
+    font-weight: bold;
+}
+
+.faq .category {
+    font-weight: bold;
+}
+
+.faq .q_title {
+    /*    margin-left: 30px;*/
+}
+
+.faq .answer {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* tab_qna */
+
+.tab_qna {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* notice */
+
+.notice img {
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+.notice {
+    text-align: center;
+}
+
+.notice h3 {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.notice p {
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+
+
+/* qna_form */
+
+.qna_form {
+    /*    background-color: #f7f7f9;*/
+}
+
+.qna_form h3 {
+    font-size: 26px;
+    color: #4186ec;
+    text-align: center;
+    margin: 30px 0 60px;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+.qna_form p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.qna_form .name {
+    margin-bottom: 50px;
+}
+
+.qna_form .name input {
+    width: 300px;
+    height: 38px;
+    font-size: 18px;
+}
+
+.qna_form .email {
+    margin-bottom: 50px;
+}
+
+.qna_form .email input {
+    width: 50%;
+    height: 38px;
+    font-size: 18px;
+}
+
+.qna_form .title {
+    margin-bottom: 50px;
+}
+
+.qna_form .title input {
+    width: 90%;
+    height: 38px;
+    font-size: 18px;
+}
+
+.qna_form .content textarea {
+    width: 90%;
+    height: 180px;
+    font-size: 18px;
+}
+
+.qna_form .submit input.btn {
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    text-align: center;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4186ec;
+    position: relative;
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* tab_menu display.active on/off setting */
+
+.tab_faq,
+.tab_qna {
+    display: none;
+}
+
+.tab_faq.active,
+.tab_qna.active {
+    display: block;
+}
+
+/* .answer 초기상태 세팅 */
+
+.answer {
+    display: none;
+}

@@ -1,0 +1,217 @@
+/* Online_Bookclub*/
+
+@charset "utf-8";
+
+/* main */
+
+main {
+    width: 100%;
+    height: 500px;
+    background-image: -moz-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    color: #fff;
+}
+
+main .inner-main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .inner-main .title {
+    position: absolute;
+    left: 75px;
+    top: 150px;
+}
+
+main .inner-main .title h2 {
+    font-size: 48px;
+    font-family: "jua";
+    font-weight: 300;
+}
+
+main .inner-main .title p {
+    font-size: 30px;
+}
+
+main .inner-main img {
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+/* section.top */
+
+section.top {
+    width: 1200px;
+    margin: 0 auto 100px auto;
+}
+
+.online_guide {
+    width: 100%;
+    padding: 50px 0;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.online_guide .title_box {
+    width: 50%;
+    display: inline-block;
+    /*    float: left;*/
+}
+
+.online_guide .title_box h2 {
+    font-size: 40px;
+    font-family: "jua";
+    font-weight: 300;
+    color: #4186ec;
+    margin-bottom: 40px;
+}
+
+.online_guide .title_box p {
+    font-size: 20px;
+    margin-bottom: 250px;
+}
+
+.online_guide .title_box a {
+    display: block;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #4186ec;
+    text-align: center;
+    transition: all .3s;
+}
+
+.online_guide .title_box a:hover {
+    background-color: #fff;
+    color: #4186ec;
+    border: 1px solid #4186ec;
+}
+
+.online_guide .img_box {
+    width: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+}
+
+.online_guide .img_box img {
+    width: 100%;
+    display: block;
+}
+
+/* .club_house_bm */
+
+.club_house_bm {
+    width: 100%;
+    position: relative;
+}
+
+.club_house_bm .bm_club {
+    width: 50%;
+
+}
+
+.club_house_bm .bm_club:before {
+    display: block;
+    content: "";
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #f2f0e4;
+    position: absolute;
+    left: 3%;
+    top: 13%;
+    
+}
+
+.club_house_bm .bm_club img {
+    position: relative;
+    left: 10%;
+    transform: rotate(5deg);
+}
+
+.club_house_bm .join_wrap {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.club_house_bm .join_wrap .join {
+    margin: 30px 0 50px 30px;
+}
+
+.club_house_bm .join_wrap .join img {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.club_house_bm .join_wrap .join h3 {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: "jua";
+    margin: 10px 0;
+}
+
+.club_house_bm .join_wrap .join p {}
+
+
+/* section.bottom */
+
+section.bottom {
+    width: 100%;
+    background-color: #e7f5ff;
+}
+
+.inner_bottom {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 0;
+}
+
+.inner_bottom .club_house_store {
+    position: relative;
+    left: 50%;
+    top: 0;
+    outline: 1px solid lime;
+}
+
+.inner_bottom .club_house_store .linkgrp {
+    position: absolute;
+    left: 18%;
+/*    transform: translateX(-50%);*/
+}
+
+.inner_bottom .app_title {
+    outline: 1px solid red;
+}
+
+.inner_bottom .app_title h3 {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

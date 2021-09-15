@@ -1,0 +1,835 @@
+@charset "utf-8";
+
+/*@font-face {
+    src: url("../fonts/BMJUA_ttf.ttf");
+    font-family: "jua";
+}*/
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    /*        font-family: "jua";*/
+}
+
+/* Header */
+
+
+header {
+    width: 100%;
+    height: 80px;
+    /*height: 140px;*/
+    /*mouseover되었을 때 높잇값*/
+    /*border-bottom: 1px solid #fff;*/
+    position: fixed;
+    z-index: 9999;
+}
+
+header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #eee;
+}
+
+
+header.on {
+    background-image: -moz-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    transition: all .3s;
+}
+
+header .inner_header {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /*position: relative;*/
+}
+
+header .inner_header a {
+    color: white;
+    display: block;
+}
+
+
+header .inner_header h1 {
+    float: left;
+    /*margin-top: 10px;*/
+    /*outline: 2px solid red;*/
+}
+
+header .inner_header h1 img {
+    width: 70px;
+    height: 59px;
+    margin-top: 10px;
+}
+
+
+header .inner_header nav {
+    width: 900px;
+    height: 100%;
+    /*80px*/
+    float: right;
+    /*outline: 3px solid red;*/
+    position: relative;
+}
+
+header .inner_header nav .depth_1 {
+    /*text-align: center;*/
+    line-height: 80px;
+}
+
+header .inner_header nav .depth_1 > li {
+    float: left;
+    width: 150px;
+    height: 100%;
+    /* 생략가능 */
+}
+
+header .inner_header nav .depth_1 > li > a {
+    /*display: block;*/
+    /*위에서 이미 설정*/
+    /*font-size: 22px;*/
+    font-size: 20px;
+    text-align: center;
+}
+
+/*
+header .inner_header nav .depth_1 > li > a:hover {
+    background-color: #fff;
+    color: #4186ec;
+    transition: all .2s;
+}*/
+
+header .inner_header nav .depth_1 .depth_2 {
+    /*width: 1200px;*/
+    /*background-color: rgb(66, 133, 236);*/
+    width: 100%;
+    position: absolute;
+    /*top: 80px;
+    left: 0;*/
+    line-height: 60px;
+    display: none;
+    /*outline: 3px solid red;*/
+}
+
+
+header .inner_header nav .depth_1 .depth_2 > li {
+    /*background-color: rgb(66, 133, 236);*/
+    /*width: 200px;
+    height: 50px;*/
+    display: inline-block;
+}
+
+header .inner_header nav .depth_1 .depth_2 > li > a {
+    display: block;
+    /*line-height: 50px;*/
+    /*font-size: 19px;*/
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+    text-indent: 20px;
+}
+
+header .inner_header nav .depth_1 .depth_2 > li > a:hover {
+    /*background-color: #fff;
+    color: #4186ec;
+    transition: all .2s;*/
+    text-decoration: underline;
+}
+
+
+
+/* main */
+
+main {
+    background: url(../Images/bg_main.png) no-repeat top center;
+    height: 800px;
+}
+
+main .inner_main {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    position: relative;
+}
+
+main .inner_main .main_txt {
+    position: absolute;
+    top: 130px;
+    left: 0;
+    color: white;
+}
+
+main .inner_main .main_txt h3.slogan {
+    font-size: 25px;
+    margin-top: 35px;
+    font-weight: 300;
+    text-align: center;
+}
+
+main .inner_main .main_txt p {
+    margin-top: 60px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+}
+
+main .inner_main .main_slide {
+    position: absolute;
+    right: 0;
+    top: 130px;
+    width: 600px;
+}
+
+main .inner_main .main_slide {}
+
+main .inner_main .main_slide .main_gallery {
+    position: relative;
+}
+
+main .inner_main .main_slide .main_gallery li {
+
+    /*    display: none;*/
+    position: absolute;
+
+}
+
+main .inner_main .main_slide .main_gallery li img {
+    width: 600px;
+}
+
+main .inner_main .main_slide .main_gallery li object {
+    width: 600px;
+}
+
+main .inner_main .main_slide .main_gallery li:last-child {
+    display: none;
+}
+
+main .inner_main .main_slide .main_gallery li.active {
+    /*    display: block;*/
+}
+
+
+main .inner_main .main_txt .btngrp {
+    margin: 60px 165px 0 165px;
+}
+
+main .inner_main .main_txt .btngrp li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+main .inner_main .main_txt .btngrp li.active {
+    width: 50px;
+}
+
+
+/* bookclub */
+
+section.bookclub {
+    width: 1200px;
+    margin: 160px auto 0 auto;
+    overflow: hidden;
+}
+
+section.bookclub .title_wrap {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section.bookclub .title_wrap h3 {
+    color: #4186ec;
+    font-size: 60px;
+    font-family: 'Jua', sans-serif;
+    font-weight: 300;
+}
+
+section.bookclub .title_wrap span.title_eng {
+    font-size: 30px;
+}
+
+section.bookclub .bookclub_wrap {
+    margin-bottom: 260px;
+    /*    position: relative;*/
+}
+
+section.bookclub .bookclub_wrap a {
+    position: relative;
+    display: inline-block;
+    width: 580px;
+    height: 350px;
+    border-radius: 40px;
+    background-image: -moz-linear-gradient(90deg, rgb(0, 180, 228) 0%, rgb(105, 197, 214) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(0, 180, 228) 0%, rgb(105, 197, 214) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(0, 180, 228) 0%, rgb(105, 197, 214) 100%);
+    box-shadow: 10.5px 18.187px 6.8px 1.2px rgba(110, 110, 110, 0.13);
+}
+
+section.bookclub .bookclub_wrap a img {
+padding: 30px;
+}
+
+section.bookclub .bookclub_wrap a.left {
+    left: -50%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+section.bookclub .bookclub_wrap a.right {
+    right: -50%;
+    opacity: 0;
+    transition: all .5s;
+}
+
+section.bookclub .bookclub_wrap a.left.on {
+    left: 0;
+    opacity: 0.8;
+}
+
+section.bookclub .bookclub_wrap a.right.on {
+    right: 0;
+    opacity: 0.8;
+}
+
+section.bookclub .bookclub_wrap a img {}
+
+
+section.bookclub .bookclub_wrap a:hover {
+    opacity: 1 !important;
+    transition: all .3s;
+}
+
+/* recommend */
+
+section.recommend {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section.recommend .title_wrap h3 {
+    color: #4186ec;
+    font-size: 60px;
+    font-family: 'Jua', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+section.recommend .icon_wrap {
+    margin-top: 60px;
+}
+
+section.recommend .icon_wrap .icon {
+    float: left;
+    width: 230px;
+    margin: 0 35px;
+    text-align: center;
+    opacity: 0;
+    cursor: pointer;
+}
+
+section.recommend .icon_wrap .icon img {
+    height: 160px;
+    margin-bottom: 25px;
+    transition: all .3s;
+}
+
+section.recommend .icon_wrap .icon p.icon_txt {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+section.recommend .icon_wrap .icon:hover img {
+    transform: translateY(-20px);
+}
+
+section.recommend .icon_wrap .icon:hover p {
+    color: #4186ec;
+}
+
+/* section.curriculum */
+
+section.curriculum {
+    width: 1200px;
+    margin: 240px auto 0 auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+section.curriculum .title_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section.curriculum .title_wrap h3 {
+    font-family: 'Jua', sans-serif;
+    font-size: 60px;
+    color: #4186ec;
+    font-weight: 300;
+}
+
+section.curriculum .title_wrap p {
+    /*margin-top: 40px;*/
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+section.curriculum .title_wrap a.cr_btn {
+    /*border-radius: 10px;*/
+    border-radius: 8px;
+    padding: 6px 0;
+    background-image: linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    display: block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    /*position: absolute;*/
+    position: relative;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+section.curriculum .title_wrap a.cr_btn:hover {
+    background-image: linear-gradient(0deg, rgb(11, 186, 251) 100%, rgb(66, 133, 236) 0%);
+    transition: all .2s ease-in-out;
+    /*font-size: 20px;*/
+    text-decoration: underline;
+}
+
+section.curriculum .curr_wrap {
+    /*padding-top: 60px;*/
+    /*cr_btn이 absolute를 가지고 있기 때문에 높이를 읽을 수 없어 margin 적용이 안 되므로 padding 적용*/
+}
+
+/* curr_odd */
+
+section.curriculum .curr_odd {
+    width: 1200px;
+    height: 225px;
+    margin-top: 120px;
+    position: relative;
+    /*    overflow: hidden;*/
+}
+
+section.curriculum .curr_odd .curr_title {
+    width: 600px;
+    height: 100%;
+    /*    float: left;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+}
+
+section.curriculum .curr_odd .curr_title p.level {
+    color: #4186ec;
+    font-size: 36px;
+    font-family: 'Jua', sans-serif;
+    text-align: right;
+    margin: 50px 100px 0 0;
+
+}
+
+section.curriculum .curr_odd .curr_title p.theme {
+    font-size: 36px;
+    font-family: 'Jua', sans-serif;
+    margin-top: 36px;
+    margin-right: 100px;
+}
+
+section.curriculum .curr_odd .curr_books {
+    width: 600px;
+    height: 100%;
+    /*    float: right;*/
+    /*    position: relative;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section.curriculum .curr_odd .curr_books a:hover img {
+    transform: translateY(-20px);
+    transition: all .5s;
+}
+
+section.curriculum .curr_odd .curr_books div.bookshelf {
+    background-color: #fff;
+    width: 600px;
+    height: 20px;
+    box-shadow: 0px 12px 13.6px 2.4px rgba(110, 110, 110, 0.42);
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    z-index: 99;
+}
+
+/* curr_even */
+
+section.curriculum .curr_even {
+    width: 1200px;
+    height: 225px;
+    margin-top: 120px;
+    position: relative;
+    /*    overflow: hidden;*/
+}
+
+section.curriculum .curr_even .curr_title {
+    width: 600px;
+    height: 100%;
+    /*    float: right;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: left;
+}
+
+
+section.curriculum .curr_even .curr_title p.level {
+    color: #4186ec;
+    font-size: 36px;
+    font-family: 'Jua', sans-serif;
+    text-align: left;
+    margin: 50px 0 0 100px;
+}
+
+
+section.curriculum .curr_even .curr_title p.theme {
+    font-size: 36px;
+    font-family: 'Jua', sans-serif;
+    margin-top: 36px;
+    margin-left: 100px;
+    letter-spacing: -2px;
+}
+
+
+
+section.curriculum .curr_even .curr_books {
+    width: 600px;
+    height: 100%;
+    /*    float: left;*/
+    /*    position: relative;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section.curriculum .curr_even .curr_books a:hover img {
+    transform: translateY(-20px);
+    transition: all .5s;
+}
+
+section.curriculum .curr_even .curr_books div.bookshelf {
+    background-color: #fff;
+    width: 600px;
+    height: 20px;
+    box-shadow: 0px 12px 13.6px 2.4px rgba(110, 110, 110, 0.42);
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    z-index: 99;
+}
+
+/* 커리큘럼 jQuery 스크롤 이벤트 초기세팅 */
+
+.curr_odd .curr_title {
+    opacity: 0;
+}
+
+.curr_odd .curr_books a {
+    opacity: 0;
+}
+
+
+.curr_even .curr_title {
+    opacity: 0;
+}
+
+.curr_even .curr_books a {
+    opacity: 0;
+}
+
+
+
+/* daily */
+
+section.daily {
+    width: 100%;
+    height: 700px;
+    margin-top: 240px;
+    background: url(../Images/bg_daily.png) no-repeat top;
+    background-size: cover;
+}
+
+section.daily .inner_daily {
+    width: 1320px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+section.daily .inner_daily .main_book {
+    width: 340px;
+    height: 490px;
+    margin-right: 80px;
+    margin-top: 105px;
+    float: left;
+}
+
+section.daily .inner_daily .main_book a {
+    display: block;
+}
+
+section.daily .inner_daily .main_book img {
+    width: 100%;
+    display: block;
+}
+
+section.daily .inner_daily .daily_con_wrap {
+    width: 900px;
+    height: 100%;
+    float: right;
+    padding: 20px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+section.daily .inner_daily .daily_con_wrap .daily_navi {
+    margin-bottom: 20px;
+}
+
+
+section.daily .inner_daily .daily_con_wrap .daily_navi .daily_title {
+    float: left;
+    /*    margin-bottom: 20px;*/
+}
+
+section.daily .inner_daily .daily_con_wrap .daily_navi .daily_title h3 {
+    font-family: 'Jua', sans-serif;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+section.daily .inner_daily .daily_con_wrap .daily_navi .daily_title p {
+    font-size: 20px;
+}
+
+section.daily .inner_daily .daily_con_wrap .daily_navi .btn_wrap {
+    height: 100%;
+    margin-top: 6px;
+    float: right;
+}
+
+section.daily .inner_daily .daily_con_wrap .daily_navi .btn_wrap a {
+    margin: 15px;
+    display: inline-block;
+}
+
+section.daily .inner_daily .daily_con_wrap .daily_navi .btn_wrap a img {
+    display: inline-block;
+}
+
+section.daily .inner_daily .daily_con_wrap .days_wrap {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+section.daily .inner_daily .daily_con_wrap .days_wrap .day {
+    display: block;
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    margin: 10px 20px 20px;
+    border-radius: 50px 0 50px 0;
+    box-shadow: 2.5px 4.33px 4.75px 0.25px rgba(51, 51, 51, 0.5);
+    float: left;
+    text-align: center;
+}
+
+section.daily .inner_daily .daily_con_wrap .days_wrap .box-indent {
+    margin-left: 140px;
+}
+
+section.daily .inner_daily .daily_con_wrap .days_wrap .day .day_num {
+    font-family: 'Jua', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+section.daily .inner_daily .daily_con_wrap .days_wrap .day .thumb_nail {
+    display: inline-block;
+    margin: 0 10px;
+    /*width: 80%;*/
+    width: 74%;
+}
+
+section.daily .inner_daily .daily_con_wrap .days_wrap .day .title {
+    text-align: center;
+    margin-top: 4px;
+}
+
+section.daily .inner_daily .days_pager {
+    /*    outline: 1px solid lime;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 14px;
+}
+
+section.daily .inner_daily .days_pager li {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #4186ec;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+section.daily .inner_daily .days_pager li ~ li {
+    margin-left: 6px;
+}
+
+section.daily .inner_daily .days_pager li.on {
+    width: 40px;
+    border-radius: 50px;
+    background-color: blue;
+}
+
+
+/* apply */
+
+section.apply {
+    width: 100%;
+    height: 640px;
+    background: url(../Images/bg_bookclub.png) no-repeat top;
+}
+
+section.apply .inner_apply {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section.apply .inner_apply .lnk_grp {
+    width: 490px;
+    float: right;
+}
+
+section.apply .inner_apply .lnk_grp h3 {
+    color: #fff;
+    font-family: 'Jua', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 100px 10px;
+}
+
+section.apply .inner_apply .lnk_grp a {
+    display: block;
+    color: #fff;
+    width: 360px;
+    height: 50px;
+    margin: 40px 65px;
+    text-align: center;
+    border: 2px solid #fff;
+    line-height: 50px;
+    /*border-radius: 20px;
+    font-size: 24px;*/
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+section.apply .inner_apply .lnk_grp a:hover {
+    background-color: #fff;
+    color: #4186ec;
+    transition: all .3s;
+}
+
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    /*height: 240px;*/
+    background-color: #00157d;
+    color: #fff;
+}
+
+footer .inner_footer {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer .inner_footer .footer_top {
+    padding-top: 40px;
+}
+
+footer .inner_footer .footer_top img {
+    float: left;
+    height: 70px;
+    margin-top: 10px;
+}
+
+footer .inner_footer .footer_top p {
+    float: left;
+    margin-left: 40px;
+}
+
+footer .inner_footer .footer_top p span {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+footer .inner_footer .footer_bottom {
+    border-top: 1px solid #fff;
+    /*margin-top: 60px;*/
+    margin-top: 40px;
+}
+
+footer .inner_footer .footer_bottom p {
+    padding: 40px 0 60px;
+}

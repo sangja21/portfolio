@@ -1,0 +1,180 @@
+/* curriculum level */
+
+@charset "utf-8";
+
+/* main */
+
+main {
+    width: 100%;
+    height: 500px;
+    background-image: -moz-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -webkit-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    background-image: -ms-linear-gradient(90deg, rgb(11, 186, 251) 0%, rgb(66, 133, 236) 100%);
+    color: #fff;
+}
+
+main .inner-main {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+main .inner-main .title {
+    position: absolute;
+    left: 75px;
+    top: 150px;
+}
+
+main .inner-main .title h2 {
+    font-size: 48px;
+    font-family: "jua";
+    font-weight: 300;
+}
+
+main .inner-main .title p {
+    font-size: 30px;
+}
+
+main .inner-main img {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+/* section */
+
+section.level2 {
+    width: 100%;
+    height: 900px;
+}
+
+.inner_level {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 175px 0;
+}
+
+.img_wrap {
+    display: inline-block;
+    width: 600px;
+    height: 550px;
+}
+
+/* section.level2 */
+section.level2 {
+    background-color: rgba(252, 104, 111, 0.1);
+}
+
+section.level2 .img_wrap {
+    background: url(../images/curr_level2.png) no-repeat right
+}
+
+/* section.left */
+
+section.left .title_wrap .level_title {
+    margin-left: 80px;
+}
+
+section.left .title_wrap .books {
+    margin-left: 150px;
+}
+
+/* theme title */
+
+.title_wrap .level_title .kor_title {
+    font-size: 100px;
+    font-family: "jua";
+    font-weight: 300;
+}
+
+.title_wrap .level_title .eng_title {
+    font-size: 66px;
+    font-weight: 30;
+    color: #888787;
+}
+
+.title_wrap .level_title .theme {
+    font-size: 35px;
+    font-family: "jua";
+    font-weight: 300;
+    margin-bottom: 130px;
+}
+
+.title_wrap .books p {
+    display: block;
+    font-size: 24px;
+    line-height: 40px;
+    position: relative;
+    margin: 10px 0;
+}
+
+/* books_icon */
+
+.title_wrap .books p:before {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -55px;
+}
+
+.title_wrap .books .red:before {
+    background: url(../images/curr_book_red.png) no-repeat bottom;
+    background-size: cover;
+}
+
+.title_wrap .books .green:before {
+    background: url(../images/curr_book_green.png) no-repeat bottom;
+    background-size: cover;
+}
+
+.title_wrap .books .blue:before {
+    background: url(../images/curr_book_blue.png) no-repeat bottom;
+    background-size: cover;
+}
+
+
+
+/* book */
+
+.inner-section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.book {
+    margin: 100px 0;
+    padding: 10px;
+}
+
+.book_cover a {
+    width: 200px;
+    height: 300px;
+    display: block;
+    padding-right: 30px;
+    /*    outline: 1px solid red;*/
+}
+
+.book_cover a img {
+    width: 200px;
+    height: 300px;
+    display: block;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.book_info {
+    font-weight: bold;
+}
+
+table tr.gap {
+    height: 96px;
+}
+
+.title_wrap {
+    display: inline-block;
+    width: 596px;
+    height: 550px;
+    /*    outline: 1px solid blue;*/
+}
